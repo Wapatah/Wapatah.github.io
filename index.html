@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR Library</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Welcome to the Wapatah Gallery</h1>
+    <p>Welcome to the AR Library website. This is a test page for AR Gallery</p>
+    <div class="container">
+      <model-viewer
+        src="AR/Pipe.gltf"
+        ar
+        ar-scale="auto"
+        auto-rotate
+        camera-controls
+        alt="A 3D model of a pipe"
+        ios-src="AR/Pipe.usdz"
+        magic-leap
+        unstable-webxr
+      ></model-viewer>
+    </div>
+  </body>
+</html>
