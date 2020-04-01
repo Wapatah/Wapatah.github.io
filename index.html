@@ -25,6 +25,7 @@
     <p>Welcome to the AR Library website. This is a test page for AR Gallery</p>
     <div class="grid-container">
       <model-viewer
+        class="a"
         src="AR/Pipe.gltf"
         ar
         ar-scale="auto"
@@ -36,7 +37,23 @@
         unstable-webxr
         background-color="lightgrey"
         shadow-intensity="1"
-        stage-light-intensity="1"
+        stage-light-intensity="3"
+        environment-intensity="2"
+      ></model-viewer>
+      <model-viewer
+        class="b"
+        src="AR/Pipe2.gltf"
+        ar
+        ar-scale="auto"
+        auto-rotate
+        camera-controls
+        alt="A 3D model of a pipe"
+        ios-src="AR/Pipe2.usdz"
+        magic-leap
+        unstable-webxr
+        background-color="lightgrey"
+        shadow-intensity="1"
+        stage-light-intensity="4"
         environment-intensity="2"
       ></model-viewer>
     </div>
