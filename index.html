@@ -24,51 +24,75 @@
     <h1>Welcome to the Wapatah Gallery</h1>
     <p>Welcome to the AR Library website. This is a test page for AR Gallery</p>
     <div class="grid-container">
-      <model-viewer
-        class="a"
-        src="AR/Pipe.gltf"
-        ar
-        ar-scale="auto"
-        auto-rotate
-        camera-controls
-        alt="A 3D model of a pipe"
-        ios-src="AR/Pipe.usdz"
-        magic-leap
-        unstable-webxr
-        background-color="lightgrey"
-        shadow-intensity="1"
-        stage-light-intensity="3"
-        environment-intensity="2"
-      ></model-viewer>
-      <model-viewer
-        class="b"
-        src="AR/Pipe2.gltf"
-        ar
-        ar-scale="auto"
-        auto-rotate
-        camera-controls
-        alt="A 3D model of a pipe"
-        ios-src="AR/Pipe2.usdz"
-        magic-leap
-        unstable-webxr
-        background-color="lightgrey"
-        shadow-intensity="1"
-        stage-light-intensity="4"
-        environment-intensity="2"
-      ></model-viewer>
+      <div style="background:lightgrey;" class="a">
+        <model-viewer
+          src="AR/Pipe.gltf"
+          ar
+          ar-scale="auto"
+          auto-rotate
+          camera-controls
+          alt="A 3D model of a pipe"
+          ios-src="AR/Pipe.usdz"
+          magic-leap
+          unstable-webxr
+          shadow-intensity="1"
+          stage-light-intensity="3"
+          environment-intensity="2"
+        >
+        </model-viewer>
+      </div>
+      <div style="background:lightgrey;" class="b">
+        <model-viewer
+          src="AR/Pipe2.gltf"
+          ar
+          ar-scale="auto"
+          auto-rotate
+          camera-controls
+          alt="A 3D model of a pipe"
+          ios-src="AR/Pipe2.usdz"
+          magic-leap
+          unstable-webxr
+          shadow-intensity="1"
+          stage-light-intensity="4"
+          environment-intensity="2"
+        >
+          <button
+            onclick="myFunctionOne()"
+            slot="hotspot-head"
+            data-position="-2.85 2.78 -0.15"
+            data-normal="-1.30 2.30 0.02"
+            data-visibility-attribute="visible"
+          >
+            <div id="annotation1" class="annotation">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </button>
+          <button
+            onclick="myFunctionTwo()"
+            slot="hotspot-beaver"
+            data-position="0.87 1.98 -0.44"
+            data-normal="-0.78 2.29 -0.94"
+          >
+            <div id="annotation2" class="annotation">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </button>
+        </model-viewer>
+      </div>
     </div>
     <!-- 💁 Include both scripts below to support all browsers! -->
 
     <!-- Loads <model-viewer> for modern browsers: -->
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
     ></script>
-
-    <!-- Loads <model-viewer> for old browsers like IE11: -->
     <script
       nomodule
-      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+    <script src="controls.js"></script>
   </body>
 </html>
