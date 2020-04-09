@@ -24,7 +24,7 @@
     <h1>Welcome to the Wapatah Gallery</h1>
     <p>Welcome to the AR Library website. This is a test page for AR Gallery</p>
     <div class="grid-container">
-      <div style="background:lightgrey;" class="a">
+      <div style="background:lightgrey; width:90%;" class="a">
         <model-viewer
           src="AR/Pipe.gltf"
           ar
@@ -36,12 +36,12 @@
           magic-leap
           unstable-webxr
           shadow-intensity="1"
-          stage-light-intensity="3"
-          environment-intensity="2"
+          stage-light-intensity="1"
+          environment-intensity="1"
         >
         </model-viewer>
       </div>
-      <div style="background:lightgrey;" class="b">
+      <div style="background:lightgrey; width:90%;" class="b">
         <model-viewer
           src="AR/Pipe2.gltf"
           ar
@@ -59,8 +59,8 @@
           <button
             onclick="myFunctionOne()"
             slot="hotspot-head"
-            data-position="-2.85 2.78 -0.15"
-            data-normal="-1.30 2.30 0.02"
+            data-position="-2.91 2.39 -0.00"
+            data-normal="-1.18 1.63 0.56"
             data-visibility-attribute="visible"
           >
             <div id="annotation1" class="annotation">
@@ -71,8 +71,9 @@
           <button
             onclick="myFunctionTwo()"
             slot="hotspot-beaver"
-            data-position="0.87 1.98 -0.44"
-            data-normal="-0.78 2.29 -0.94"
+            data-position="1.02 1.80 -0.33"
+            data-normal="0.28 1.74 -0.51"
+            data-visibility-attribute="visible"
           >
             <div id="annotation2" class="annotation">
               Lorem Ipsum is simply dummy text of the printing and typesetting

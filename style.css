@@ -10,7 +10,6 @@ model-viewer {
 }
 
 .grid-container {
-  background-color: #fff;
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -32,7 +31,7 @@ model-viewer {
   }
   .b {
     grid-column: 8 / 13;
-    grid-row: 1 / 4;
+    grid-row: 1 / 7;
   }
 }
 
@@ -59,21 +58,25 @@ button {
 
 button[slot="hotspot-head"] {
   --min-hotspot-opacity: 0;
-  background-color: #208778;
+  background-color: #20877880;
 }
 
 button[slot="hotspot-head"]:not([data-visible]) {
   background-color: transparent;
-  border: 3px solid #208778;
+  border: 3px solid #20877880;
 }
 
 button[slot="hotspot-beaver"] {
   --min-hotspot-opacity: 0;
-  background-color: #208778;
+  background-color: #20877880;
+}
+button[slot="hotspot-beaver"]:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid #20877880;
 }
 
 .annotation {
-  background-color: #888888;
+  background-color: #88888880;
   position: absolute;
   transform: translate(10px, 10px);
   border-radius: 10px;
