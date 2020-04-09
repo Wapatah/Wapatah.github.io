@@ -15,3 +15,12 @@ function myFunctionTwo() {
     y.style.display = "none";
   }
 }
+
+function myFunctionThree() {
+  var y = document.getElementById("annotation3");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}

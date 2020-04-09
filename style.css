@@ -30,7 +30,7 @@ model-viewer {
     grid-row: 1 / 7;
   }
   .b {
-    grid-column: 8 / 13;
+    grid-column: 1/ 8;
     grid-row: 1 / 7;
   }
 }
