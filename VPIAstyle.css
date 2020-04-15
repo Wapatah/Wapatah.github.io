@@ -1192,6 +1192,10 @@ ul.social-network li {
   #my-card-img-top img {
     height: 80vw;
   }
+  #article-body.col-md-1 {
+    flex: 0 0 100%;
+    max-width: none;
+  }
 }
 @media (min-width: 768px) {
   .modal-fullscreen .modal-dialog {
