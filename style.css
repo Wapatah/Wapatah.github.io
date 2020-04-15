@@ -123,3 +123,8 @@ button[slot="hotspot-beaver"]:not([data-visible]) {
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .grid-container {
+    height: 80vh;
+  }
+}
