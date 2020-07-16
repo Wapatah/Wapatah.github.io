@@ -65,6 +65,26 @@ button[slot="hotspot-head"]:not([data-visible]) {
   border: 3px solid #20877880;
 }
 
+button[slot="hotspot-rope"] {
+  --min-hotspot-opacity: 0;
+  background-color: #20877880;
+}
+
+button[slot="hotspot-rope"]:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid #20877880;
+}
+
+button[slot="hotspot-tail"] {
+  --min-hotspot-opacity: 0;
+  background-color: #20877880;
+}
+
+button[slot="hotspot-tail"]:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid #20877880;
+}
+
 button[slot="hotspot-beaver"] {
   --min-hotspot-opacity: 0;
   background-color: #20877880;
