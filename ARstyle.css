@@ -14,7 +14,7 @@ model-viewer {
 
 .grid-container {
   width: auto;
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-gap: 0px;
 }
@@ -101,4 +101,9 @@ button[slot="hotspot-beaver"]:not([data-visible]) {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+@media (max-width: 768px) {
+  .grid-container {
+    height: 80vh;
+  }
 }
